@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task management</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script> -->
+    <link rel="stylesheet" href="../styles/wk_task_pie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="fullpage">
+        <div id="sidenav">
+            <div id="sidenav1">
+                <img id="hmpgredirect" src="../images/Untitled design.png" alt="">
+                <hr>
+                <img src="../images/cate1_images/wm_icon_footer.png" alt="">
+                <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                <p>Notification</p>
+                <i class="fa-solid fa-inbox" style="color: #ffffff;"></i>
+                <p>Inbox</p>
+                <i class="fa-solid fa-briefcase" style="color: #ffffff;"></i>
+                <p>My work</p>
+                <i class="fa-regular fa-star" style="color: #ffffff;"></i>
+                <p>Favorities</p>
+            </div>
+            <div id="sidenav2">
+                <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
+                <p>Contact us</p>
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                <p>Search</p>
+                <i class="fa-solid fa-question" style="color: #ffffff;"></i>
+                <p>Help</p>
+                <hr>
+                <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                <button id="logout">Logout</button>
+            </div>
+        </div>
+        <div id="addNup">
+            <form id="add">
+                <h2>Add new Task</h2>
+                <input type="text" id="board" placeholder="Enter board name">
+                <input type="text" id="task" placeholder="Enter task name">
+                <input type="text" id="person_allocated" placeholder="Enter name of person">
+                <input type="text" id="p_email" placeholder="Enter person's email">
+                <select  id="status">
+                    <option class="ogray" value="">Status of task</option>
+                    <option class="ogreen" value="completed">Completed</option>
+                    <option class="oyellow" value="in_progress">In progress</option>
+                    <option class="ored" value="stuck">Stuck</option>
+                </select>
+                <p>Start date</p>
+                <input type="date" id="start_date" placeholder="Enter start date">
+                <p>End date</p>
+                <input type="date" id="end_date" placeholder="Enter end date">
+                <input type="text" id="extra" placeholder="Any extra info or comments..">
+                <input type="submit" id="submit" value="Add">
+            </form>
+
+
+            <!-- <form id="update">
+                <h2>Update Task</h2>
+                <p id="idt" style="display: none;"></p>
+                <input type="text" id="up_board" placeholder="Enter board name">
+                <input type="text" id="up_task" placeholder="Enter task name">
+                <input type="text" id="up_person_allocated" placeholder="Enter name of person">
+                <input type="text" id="up_p_email" placeholder="Enter person's email">
+                <select  id="up_status">
+                    <option class="ogray" value="">Status of task</option>
+                    <option class="ogreen" value="completed">Completed</option>
+                    <option class="oyellow" value="in_progress">In progress</option>
+                    <option class="ored" value="stuck">Stuck</option>
+                </select>
+                <p>Start date</p>
+                <input type="date" id="up_start_date" placeholder="Enter start date">
+                <p>End date</p>
+                <input type="date" id="up_end_date" placeholder="Enter end date">
+                <input type="text" id="up_extra" placeholder="Any extra info or comments..">
+                <input type="submit" id="up_submit" value="Update">
+            </form> -->
+        </div>
+
+
+
+        <div id="fullworkspace">
+
+            <div id="topbar">
+                <h2><span class="spancls"> All your</span>  Boards <span class="spancls">  and </span> Tasks </h2>
+                <div id="dataforms">
+                    <div>
+                        <button class="topbtns" id="kanban">Cards</button>
+                        <button class="topbtns" id="Table">Table</button>
+                        <button class="topbtns" id="Gantt">Gantt</button>
+                        <button class="topbtns" id="pie">Pie</button>
+                        <select class="topbtns1" id="sortBystatus">
+                            <option value="">Sort by Status</option>
+                            <option value="lowToHigh">Stuck to Completed</option>
+                            <option value="HighToLow">Completed to Stuck</option>
+                        </select>
+                        <select class="topbtns1" id="sortByStartdate">
+                            <option value="">Sort by Start Date</option>
+                            <option value="lowToHighSD">oldest to latest</option>
+                            <option value="HighToLowSD">latest to oldest</option>
+                        </select>
+
+                        <select class="topbtns1" id="filterByStatus">
+                            <option value="" >Filter By Status</option>
+                            <option value="completed" >Completed</option>
+                            <option value="in_progress" >In progress</option>
+                            <option value="stuck" >Stuck</option>
+                        </select>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <form id="filterByBoard">
+                            <input type="text" id="filterBoard" class="topbtns1" placeholder="Enter Board name">
+                            <input type="submit" id="filterBoardSubmit" class="topbtns1" value="Filter Board">
+                        </form>
+                        <form id="filterByName">
+                            <input type="text" id="filtername" class="topbtns1" placeholder="Enter person's name">
+                            <input type="submit" id="filternameSubmit" class="topbtns1" value="Filter name">
+                        </form>
+                        <form id="searchany">
+                            <input class="topbtns1" type="text" placeholder="Search anything" id="search">
+                            <input class="topbtns1" type="submit" value="search">
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </div>
+                    <canvas id="myChart"></canvas>
+
+        </div>
+</div>
+    
+</body>
+</html>
+<script src="../scripts/wk_task_pie.js"></script>

@@ -1,0 +1,573 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #303636;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(3, 79, 232, 0.25) 0px 2px 8px 0px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    /* z-index: 1; */
+    padding: 15px 0px 15px 0px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 18%;
+    margin-right: 2%;
+
+}
+
+#logo>img{
+    width: 25%;
+}
+#logo span{
+    font-size: small;
+}
+
+#logo>a{
+    text-decoration: none;
+    color: #1e2222;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#navleftdiv{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+#navleftdiv>button{
+    margin-right: 3%;
+}
+
+
+#navrightdiv{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 40%;
+    margin-right: 20px;
+}
+
+#navrightdiv>button{
+    margin-right: 0%;
+}
+
+#navbar button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #303636;
+    text-decoration: none;
+    border-width: 0px;
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#navbar button:hover{
+    background-color: rgb(237, 243, 253);
+    color: rgb(83, 1, 225);
+}
+#navbar span{
+    font-weight: 600;
+}
+
+#navrightdiv>a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #303636;
+    text-decoration: none;
+    border-width: 0px;
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+#navrightdiv>a:hover{
+    background-color: rgb(176, 255, 181);
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* nav bar ended */
+
+
+/* nav bar dropdown start */
+
+.select-menu{
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: left;
+
+}
+
+.select-btn>div{
+    display: flex;
+    align-items: center;
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: absolute;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+    width: 70%;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #303636;
+}
+
+.navbtns i{
+    font-size: 25px;
+}
+
+.navbtns{
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+
+}
+
+.dropimgs{
+    width: 3%;
+    margin-right: 10px;
+}
+
+.option-text{
+    margin-right: 10px;
+    padding: 15px;
+    width: 130px;
+
+}
+/* nav bar dropdown end */
+
+/* main content started-------------------------------- */
+/* main content started-------------------------------- */
+#main{
+    /* background: #dadbf9; */
+     background: rgb(1,3,52);
+     background: linear-gradient(180deg, #ff33cf 0%, #d6ffeb 25%, #2471a3 50%, #ebebeb 75%, #283747 100%);
+    /* background: linear-gradient(180deg, #1e90ff 0%, #ff8c00 30%, #ff1493 60%, #32cd32 100%); */
+    margin-top: -40px;
+}
+
+#main>h1{
+    font-size: 52px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 60px;
+    color: white;
+}
+
+#main>p{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.spanid{
+    font-weight: 700;
+}
+/* cate1--------- */
+#cate1{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
+#cate1>div>img{
+    width: 35px;
+}
+
+#cate1>div{
+    /* background-color: #ff33cf; */
+    background-color: transparent;
+    color: black;
+    
+    width: 10%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px 5px 0px 5px;
+    margin-bottom: 50px;
+    box-shadow: rgba(9, 126, 185, 0.24) 0px 3px 8px;
+}
+
+#cate1>div:hover{
+    box-shadow: rgba(1, 22, 62, 0.25) 0px 4px 16px, rgba(3, 79, 232, 0.25) 0px 8px 24px, rgba(9, 80, 233, 0.12) 0px 16px 56px;
+}
+
+.getstart{
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    border: 0px;
+    background-image: linear-gradient(to right,#0250d6 0%, #3d44c4 100%);
+    color: white;
+    display: block;
+    margin: auto;
+    font-size: medium;
+
+
+}
+
+.getstart:hover{
+    background-image: linear-gradient(to right,#033893 0%, #2110bd 100%);
+}
+
+/* cate2--------------- */
+
+#cate2{
+
+    background-color: white;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+#cate2>div:nth-child(1){
+    padding-top: 40px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.spanid2{
+    font-weight: 400;
+}
+
+#card{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#card>div{
+    border-radius: 8px;
+    box-shadow: rgba(9, 126, 185, 0.24) 0px 3px 8px;
+    text-align: start;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+#card>div>img{
+    width: 100%;
+}
+
+/* cate3------------- */
+
+#cate3{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#divbtncate3{
+    width: 60%;
+    margin: auto;
+}
+
+.btncate3{
+    padding: 12px;
+    border-radius: 15px;
+    font-size: medium;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-color:rgb(83, 1, 225);
+    border-width: 1px;
+    background-color: #eff0fd;
+}
+
+.btncate3:hover{
+    cursor: pointer;
+}
+
+#divbtncate3>button:nth-child(1){
+    color: white;
+    background-color: #2110bd;
+}
+
+#cate3img{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#cate3img>img{
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: rgba(9, 126, 185, 0.24) 0px 3px 8px;
+
+}
+
+
+#cate4{
+    background-color: white;
+}
+
+#cate4>div{
+    padding-top: 40px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#cate4left{
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+#cate4right{
+    width: 50%;
+    /* border: 1px solid black; */
+
+}
+
+#cate4right>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+
+#cate4right img{
+    width: 100%;
+}
+
+.manyways{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(9, 126, 185, 0.24) 0px 3px 8px;
+    padding-bottom: -80px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.manyways>p{
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#cate4left div{
+ margin-top: 20px;
+}
+
+.manyways2{
+    width: 100%;
+}
+
+#cate4right>div:nth-child(1){
+    margin-top: 100px;
+    /* margin-bottom:20px ; */
+}
+
+#cate4right>div:nth-child(2){
+    margin-top: 65px;
+    margin-bottom:20px ;
+}
+
+#btngetstart{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+/* main content ended ------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer start */
+#logof{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 18%;
+    margin-right: 2%;
+
+}
+
+#logof>img{
+    width: 100%;
+}
+#logof span{
+    font-size: small;
+}
+
+#logof>a{
+    text-decoration: none;
+    color: #1e2222;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: rgb(241, 241, 241);
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+}
+
+#footer>div{
+    width: 15%;
+}
+
+
+#footer a{
+    text-decoration: none;
+    color: #303636;
+    line-height: 40px;
+}
+
+.fdiv2>a:nth-child(1){
+    font-weight: 600;
+}
+
+#footerbottum{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-top: 30px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 50px;
+}
+
+#footerbottum>div:nth-child(1){
+    text-decoration: underline;
+}
+
+
+#footerbottum>div:nth-child(2){
+    width: 35%;
+    display: flex;
+    text-align: center;
+    /* border: 1px solid black; */
+
+}
+#footerbottum>div:nth-child(2)>img{
+    margin-left: 20px;
+    width: 30%;
+}
+
+#logout{
+    padding: 15px 35px;
+    margin-left: 30px;
+    border-radius: 8px;
+    font-size: large;
+    box-shadow: rgba(1, 22, 62, 0.25) 0px 4px 16px, rgba(3, 79, 232, 0.25) 0px 8px 24px, rgba(9, 80, 233, 0.12) 0px 16px 56px;
+}
+
+#logout:hover{
+    cursor: pointer;
+}
+/* footer ended */
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablet screens */
+    #logo {
+        width: 30%;
+    }
+
+    #navleftdiv, #navrightdiv {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Adjustments for mobile screens */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    #logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #navleftdiv, #navrightdiv {
+        margin: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="leftmaincont">    
+                <div id="logo">
+                    <img src="../images/Untitled design.png" alt="Logo">        
+                    <h2>Mapi<span>.com</span></h2>
+                </div>
+                <h1>Login to your account</h1>
+                <form id="formcontainer">
+                    <p>Email</p>
+                    <input type="email" id="email" class="rcheck" placeholder="Enter your Email" required>
+                    <p>Password</p>
+                    <input type="password" id="password" class="rcheck" placeholder="Enter your password" required>
+                    <p id="forgot">Forgot your password?</p>
+                    <input type="submit" id="continue" value="Continue">
+                </form>
+                <p>New user? Create account <a href="./register.html" id="spanid">Register/Signup</a> </p>
+                <div id="or">----- Or Sign in with -----</div>
+                <button class="echeck" id="gbtn"> <img src="../images/google-icon.svg" alt="Google icon"> Continue with Google</button>
+            </div>
+        </div>
+        <div id="right">
+            <img src="../images/welcome-to-monday.png" alt="Welcome to Monday">
+        </div>
+    </div>
+    <script src="../scripts/login.js"></script>
+</body>  
+</html>
