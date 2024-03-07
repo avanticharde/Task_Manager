@@ -3,7 +3,7 @@
 Welcome to Mapi.com! This is a Flask-based web application designed to help users manage their tasks effectively.
 
 # Netlify Link
-https://mymapi.netlify.app/
+https://taskmap.netlify.app/
 
 ## Table of Contents
 
@@ -41,11 +41,7 @@ Sure, here's a brief functionality overview that you can include in your reposit
 
 6. **Backend Technologies:** The backend of the application is built using Python and Flask, a micro web framework. MongoDB is used as the database to store task data, while Flask-JWT-Extended is utilized for JWT token-based authentication.
 
-<<<<<<< HEAD
 7. **Frontend (Optional):** While the backend is implemented using Flask, the frontend can be developed using various technologies such as HTML, CSS, JavaScript, chart.js.
-=======
-7. **Frontend (Optional):** While the backend is implemented using Flask, the frontend can be developed using various technologies such as HTML, CSS, JavaScript, chart.js
->>>>>>> 4c4ad8249bd6d4abfb570fe3e53927245f7a8af9
 
 
 ## Installation
