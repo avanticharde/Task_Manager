@@ -51,7 +51,7 @@ To run the Task Manager App locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/8309h/mapi.com.git
+  https://github.com/avanticharde/Task_Manager.git
    ```
 
 2. Install the required dependencies:
